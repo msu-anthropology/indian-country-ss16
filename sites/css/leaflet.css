@@ -386,6 +386,8 @@
 .leaflet-popup {
 	position: absolute;
 	text-align: center;
+	line-height: 1.42857143;
+	letter-spacing: normal;
 	}
 .leaflet-popup-content-wrapper {
 	padding: 1px;
