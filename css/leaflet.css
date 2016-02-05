@@ -386,7 +386,7 @@
 .leaflet-popup {
 	position: absolute;
 	text-align: center;
-	color: 1a1a1a;
+	color: #333;
 	line-height: 1.42857143;
 	letter-spacing: normal;
 	font-weight: normal;
