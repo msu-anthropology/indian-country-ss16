@@ -15,6 +15,9 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/leaflet.css" />
+	
+	<!--Lightbox2 for Tutorial images-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.css" />
     
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -31,6 +34,14 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<style>
+	img {
+	margin: 2em;
+	}
+	p {
+	margin-top: 2em;
+	}
+	</style>
   </head>
 
   <body>
@@ -67,22 +78,95 @@
     <!-- Begin page content -->
       
      <div id="detail">
-      <h1>SITE NAME</h1>
-      <h3>TIME PERIOD</h3>
-	  <h4>AUTHOR</h4>
-         <h3>FIRST SECTION HEADING</h3>
-		 <hr><!--this draws a line across the page, which I put under each section heading in the example-->
-		 <p>Paragraph text goes between these</p>
-		 <a href="#" rel="citation" data-toggle="popover" data-content=""><!--this is the required <a href> beginning tag for inline reference popups-->
-		 <br><!--this creates a break, to separate things a little better-->
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
+		<h1>Guide to Using GitHub</h1>
+		<h3>Forking a Repository</h3>
+	  	<hr><!--this draws a line across the page, which I put under each section heading in the example-->
+		<p>To fork a repository (repo), make sure you are logged into GitHub and then navigate your browser to the repo's main page on GitHub's website. I will be using the Spring 2016 iteration of <a href="https://github.com/msu-anthropology/indian-country-ss16" target="_blank"><em>This is Indian Country</em></a> to demonstrate this.</p>
+		<a href="images/fork.png" data-lightbox="."><img src="images/fork.png" style="float: right; width: 60%"/></a>
+		<br>
+		<p>Click on the "Fork" button near the top-right of the page.</p>
+		<div style="clear: both"></div>
+		<p>This should redirect you to a new page, which will be the main page for your forked repo of the one you were just looking at.</p>
+		<div style="clear: both"></div>
+		<img src="images/repo-name.png" style="float: right; width: 60%" />
+		<br>
+		<p>Note how the name of this repo is your username, followed by the repo name, with the original repo's username and repo name combination underneath it.</p>
+		<div style="clear: both"></div>
+		<br>
+		<br>
+		<h3>Cloning a Repository</h3>
+		<hr>
+		<p>Cloning is the process of saving a local copy of your repo to your own computer, so that you can make changes outside of the internet. A clone is simply a local version of a repo, which means it must periodically be synced with its original on GitHub (in this specific case, the "original" is your forked repo, <em>not</em> the repo owned by msu-anthropology) To do this, you must first download and install the <a href="http://desktop.github.com" target="_blank">GitHub Desktop program</a> and make sure you have set up the program by logging into your account.</p>
+		<img src="images/settings-btn.png" style="float: right; width: 20%" />
+		<br>
+		<p><strong>For PC Users</strong>: To confirm you have logged into your account, locate the settings area of the application. It is the button that looks like a gear.</p>
+		<div style="clear: both"></div>
+		<img src="images/settings-list.png" style="float: right; width: 20%" />
+		<br>
+		<p>This will bring up a list of places to go to change various settings. Pick the one that says "Options..."</p>
+		<div style="clear: both"></div>
+		<img src="images/options.png" style="float: right; width: 60%" />
+		<br>
+		<p>Here you find whether or not you are logged into your account. If you see your account, then great, if not, you'll see this view, with the option to "Add Account"</p>
+		<div style="clear: both"></div>
+		<p>Login to your account to complete the process.</p>
+		<img src="images/clone-btn.png" style="float: right; width: 40%" />
+		<br>
+		<p>To clone, go back to the repo on GitHub in your internet browser and click on the button that looks like a computer monitor with an arrow pointing down into it. This image depicts the top-right of the repo page.</p>
+		<div style="clear: both"></div>
+		<img src="images/approve-app.png" style="float: right; width: 40%" />
+		<br>
+		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<div style="clear: both"></div>
+		<img src="images/clone-location.png" style="float: right; width: 60%" />
+		<br>
+		<p>This will launch your GitHub desktop application and will ask you where you will like to save the repo. As I said in class, it is best to keep all your cloned repos in a single folder titled GitHub. You can see here that my GitHub folder is inside my Documents folder.</p>
+		<div style="clear: both"></div>
+		<p>After accepting the location, your clone is now on your computer. You will notice that the application shows the active branch at the top of the window. Please simply leave this setting alone and do not change between branches. This will make things easier for you for the duration of this project. If you do wish to understand how branch changes on a cloned repo work, please come and see me in LEADR.</p>
+		<br>
+		<br>
+		<h3>Making Changes Locally</h3>
+		<hr>
+		<p>To make changes to your cloned repo before sending them to the original online, install a text editing program. As mentioned in class, I recommend either <a href="https://notepad-plus-plus.org/download/" target="_blank">Notepad++</a> for PC or <a href="https://itunes.apple.com/us/app/textwrangler/id404010395?mt=12" target="_blank">TextWrangler</a> for Mac.</p>
+		<p>To open any single file (including the .html files we're editing for this project), simply right-click for PC, or option-click for Mac, on the file and choose the text editor from the list (at least, Notepad++ adds itself to this list), or choose "Open With" and then pick the text editor.</p>
+		<p>If you want to view changes as you make them to .html files, simply open the file normally and it should open in your internet browser. As you make changes in the text editor to the file, you can refresh the window or tab of the file in the browser to see the changes immediately.</p>
+		<br>
+		<br>
+		<h3>Commit local changes</h3>
+		<hr>
+		<p>To commit local changes to your cloned repo, save the files in the text editor and then go to the GitHub application.</p> 		 
+		<img src="images/changes-tab.png" style="float: right; width: 60%" />
+		<br>
+		<p>Make sure you have selected the correct repo on the left side of the window (you can see that I have several repos).</p>		
+		<p>Then, select the "Changes" tab at the top.</p>
+		<p>Give the commit a summary name, and then click the "Commit to..." button at the bottom.</p>
+		<div style="clear: both"></div>
+		<p>The changes have now been saved into your cloned repo locally, but they are not yet on your original repo online. If you have made a mistake and committed something you did not intend to commit, you can keep the changes from going to the original repo by not doing any of these further steps. If this happens, it would be best to contact me (Brian Geyer) so I can show you how to properly save the work you want to save and delete the work you didn't mean to do.</p>
+		<br>
+		<br>
+		<h3>Sync Clone to Original Repo</h3>
+		<hr>
+		<p>When you are ready, you can send all of your local changes to the original repo on GitHub by doing what is called a sync.</p>
+		<img src="images/approve-app.png" style="float: right; width: 40%" />
+		<br>
+		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<div style="clear: both"></div>
+		
+		<img src="images/approve-app.png" style="float: right; width: 40%" />
+		<br>
+		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<div style="clear: both"></div>
+		
+		<img src="images/approve-app.png" style="float: right; width: 40%" />
+		<br>
+		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<div style="clear: both"></div>
+		
+		<img src="images/approve-app.png" style="float: right; width: 40%" />
+		<br>
+		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<div style="clear: both"></div>
+		
 		 
 		 
 		 
@@ -118,6 +202,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="leaflet-omnivore-master/leaflet-omnivore.js"></script>
     <script src="js/leaflet.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("a[rel=citation]").popover({
