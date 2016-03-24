@@ -49,7 +49,7 @@
     resizeDuration: 700,
     showImageNumberLabel: true,
     wrapAround: false,
-    disableScrolling: false
+    disableScrolling: true
   };
 
   Lightbox.prototype.option = function(options) {
@@ -192,7 +192,7 @@
     var top  = $window.scrollTop() + this.options.positionFromTop;
     var left = $window.scrollLeft();
     this.$lightbox.css({
-      // top: top + 'px',
+      //top: top + 'px',
       left: left + 'px'
     }).fadeIn(this.options.fadeDuration);
 
