@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -186,8 +187,8 @@ $(window).on("resize", function () {
           
             // Bind a popup to each icon based on the same properties
             // Adds coloumns of extra info to marker popup
-            marker.bindPopup(marker.toGeoJSON().properties.timePeriod +
-                marker.toGeoJSON().properties.siteName + '<br><br> ' +
+            marker.bindPopup(marker.toGeoJSON().properties.issue +
+                marker.toGeoJSON().properties.culture + '<br><br> ' +
                 marker.toGeoJSON().properties.info + '<br><br> ' +
                 marker.toGeoJSON().properties.link, {autoPanPadding: [5,55]});
         });
