@@ -158,33 +158,55 @@
 		<br>
 		<p>After confirming that your changes have shown up (if they haven't, try re-syncing in the application and then refreshing the repo browser page), create a new Pull Request by clicking the Pull Request button.</p>
 		<div style="clear: both"></div>
-		
-		<a href="" data-lightbox="."><img src="images/approve-app.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<a href="images/compare-repos.png" data-lightbox="."><img src="images/compare-repos.png" style="margin: 2em; float: right; width: 60%" /></a>
 		<br>
-		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<p>The window that opens will look something like this one, with four dropdown menus: "base fork," "base," "head fork," and "compare." In this configuration, the system thinks you're asking to merge changes from one fork (yours) into another (in this case, the original). For this specific Pull Request, we are looking to make changes within our own forked repo, so it is important to change whichever fork (either the "base fork" or "head fork") from the original repo on the msu-anthropology account to one's own account.</p>
 		<div style="clear: both"></div>
-		
-		<a href="" data-lightbox="."><img src="images/approve-app.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<a href="images/change-base-fork.png" data-lightbox="."><img src="images/change-base-fork.png" style="margin: 2em; float: right; width: 40%" /></a>
 		<br>
-		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<p>Your own account should be the second entry on the list, under msu-anthropology.</p>
 		<div style="clear: both"></div>
-		
-		<a href="" data-lightbox="."><img src="images/approve-app.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<a href="images/compare-branches.png" data-lightbox="."><img src="images/compare-branches.png" style="margin: 2em; float: right; width: 60%" /></a>
 		<br>
-		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<p>After choosing your own account on this list, the "base fork" and "head fork" options will disappear and all that will remain are "base" and "compare," where they are set to the same branch: gh-pages</p>
+		<p>Remember: "base" is the branch where your changes are going <em>into</em> and "compare" is where the changes are <em>coming from</em>. So, for this specific tutorial, you should leave the "base" as "gh-pages" and change the "compare" to "master."</p>
 		<div style="clear: both"></div>
-		
-		<a href="" data-lightbox="."><img src="images/approve-app.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<a href="images/create-pull-request.png" data-lightbox="."><img src="images/create-pull-request.png" style="margin: 2em; float: right; width: 60%" /></a>
 		<br>
-		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<p>After making this selection, the browser window should hopefully update again, to give you the ability to name the Pull Request (although, it will probably have a name based on the commit you did before), write extra details, and then create it.</p>
 		<div style="clear: both"></div>
-		 
-		 
-		 
-		 
-		 
-		 
-		 
+		<a href="images/complete-pull-request.png" data-lightbox="."><img src="images/complete-pull-request.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>If you have properly made sure you've only made changes to the one branch, the next window will indicate that your Pull Request can be merged automatically. Click "Merge pull request," and then "Confirm merge." After this, your Pull Request is complete and the changes you made should be on the other branch as well.</p>
+		<div style="clear: both"></div> 
+		<a href="images/conflicts.png" data-lightbox="."><img src="images/conflicts.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>However, if you have made changes to both branches, you may see a screen after creating the Pull Request that looks like this, where it says the changes cannot be merged automatically. In this case, please contact me or someone else in LEADR and we will help you resolve the issue.</p>
+		<div style="clear: both"></div>
+		<p>That's it! If things have gone smoothly, you will have successfully made changes to a file on your own computer, and then sent those changes all the way from that location on your computer to your forked repo on GitHub and into another branch.</p>
+		<br>
+		<br>
+		<h3>Turning In Your Work: Create Pull Request from Your Repo to the Main Repo</h3>
+		<hr>
+		<p>When you have completed your project, you will need to turn in your work. To do this, you'll need to create a Pull Request that sends your project from your own master branch to the main repo's master branch.</p>		 
+		<a href="images/compare-repos-master.png" data-lightbox="."><img src="images/compare-repos-master.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>To do this, you will follow most of the same steps above, but will be looking at your master branch when you click the Pull Request button. You will again reach the point shown in this image.</p>
+		<p>However, instead of changing the "base fork" from msu-anthropology to your own account, leave it alone. This means all the settings will be as shown: the "base fork" (where the changes are going <em>into</em>) is "msu-anthropology," the "base" is "master," the "head fork" is your account, and the "compare" should be "master" (or whichever of your branches contains your final version).</p>
+		<div style="clear: both"></div>
+		<a href="images/turned-in.png" data-lightbox="."><img src="images/turned-in.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>Click "Create pull request" and you should see a screen similar to this, where there is now "Merge pull request" button. If you have successfully reached this screen, then you have nothing more to do.</p>
+		<div style="clear: both"></div>
+		<a href="images/comment.png" data-lightbox="."><img src="images/comment.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p><strong>HOWEVER</strong>, if you receive an email about a comment on your pull request, it means I have written something to you as a comment on your pull request. Please revisit your "turn-in" Pull Request and address the issues I have written there. This is an example of what a comment will look like.
+		<div style="clear: both"></div>
+		<br>
+		<br>
+		<h3>Concluding Thoughts</h3>
+		<hr>
+		<p>Ok, I have tried to be as comprehensive as possible. If any of you have issues, please feel free to contact our main LEADR email address, <strong>leadr [at] msu [dot] edu</strong>, or myself at <strong>geyerbri [at] msu [dot] edu</strong>, to ask for assistance or set up an appointment to meet with someone. You may also stop by the lab any time that we are open. You can find our hours on the <a href="http://leadr.msu.edu" target="_blank">main page of our website</a>.</p>
 		 
 		 
 		 
