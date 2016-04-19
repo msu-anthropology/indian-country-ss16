@@ -69,7 +69,7 @@
               </ul>
             </li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div><!-- /.nav-collapse -->
       </div>
     </div>
 
@@ -84,7 +84,7 @@
 		<br>
 		<p>Click on the "Fork" button near the top-right of the page.</p>
 		<div style="clear: both"></div>
-		<p>This should redirect you to a new page, which will be for your forked repo, even though it looks the same as the page from the original repo</p>
+		<p>This should redirect you to a new page, which will be for your forked repo, even though it looks the same as the page from the original repo.</p>
 		<div style="clear: both"></div>
 		<a href="images/repo-name.png" data-lightbox="2"><img src="images/repo-name.png" style="margin: 2em; float: right; width: 40%" /></a>
 		<br>
@@ -97,12 +97,12 @@
 		<p>Cloning is the process of saving a local copy of your repo to your own computer, so that you can make changes outside of the internet. A clone is simply a local version of a repo, which means it must be synced periodically with your version on the web. To do this, you must first download and install the <a href="http://desktop.github.com" target="_blank">GitHub Desktop program</a> and make sure you have set up the program by logging into your account. This tutorial uses screenshots from the PC version of this application, but the majority of the steps should be the same for a Mac. The few steps that are drastically different will include screenshots for Mac.</p>
 		<a href="images/settings-btn.png" data-lightbox="3"><img src="images/settings-btn.png" style="margin: 2em; float: right; width: 30%" /></a>
 		<br>
-		<p><strong>FOR PC</strong>:To confirm you have logged into your account, locate the settings area of the application. It is the button that looks like a gear.</p>
+		<p><strong>FOR PC</strong>: To confirm you have logged into your account, locate the settings area of the application. It is the button that looks like a gear.</p>
 		<p>This will bring up a list of places to go to change various settings. Pick the one that says "Options..."</p>
 		<div style="clear: both"></div>
 		<a href="images/options.png" data-lightbox="5"><img src="images/options.png" style="margin: 2em; float: right; width: 60%" /></a>
 		<br>
-		<p>Here you find whether or not you are logged into your account. If you see your account, then great, if not, you'll see this view, with the option to "Add Account"</p>
+		<p>Here you find whether or not you are logged into your account. If you see your account, then great, if not, you'll see this view, with the option to "Add Account."</p>
 		<div style="clear: both"></div>
 		<p>Login to your account to complete the process.</p>
 		<a href="images/mac-preferences.png" data-lightbox="6"><img src="images/mac-preferences.png" style="margin: 2em; float: right; width: 60%" /></a>
@@ -135,6 +135,28 @@
 		<p>If you want to view changes as you make them to .html files, simply double-click to open and it should open in your internet browser. As you make changes in the text editor to the file, you can refresh the window or tab of the file in the browser to see the changes immediately.</p>
 		<br>
 		<br>
+				<h3>Images with Captions</h3>
+		<hr>
+		<p>Because LEADR projects often require captions on images in order to allow for proper citation, adding images to html files requires a little more than simple &lt;img&gt; tags. Furthermore, the <code>src</code> value for an image used on a LEADR project should point to a locally-saved image, rather than a URL of the image on a website. This means you should be saving images from the internet into your repo, often into the "images" folder that is a sub-folder to the one that contains your html file. For example, if your html file is saved in a folder named "sites," it is easiest to save the image you use into the folder named "images" <em>inside</em> of the one named "sites."</p>
+		<p>To add captions to images, it is important to use the &lt;figure&gt; container. Figure containers allow a &lt;figcaption&gt; container within, which makes captioning painless. Furthermore, any changes to the image's size, alignment, or other attributes should be made to the &lt;figure&gt; tag instead. Define the &lt;img&gt; tag with <code>width="100%"</code> in order to ensure the image's width expands and contracts as you change the size of the &lt;figure&gt; container.</p>
+		<p>Finally, to create a popover that displays the citation information about your image, use an &lt;a&gt; tag with the <code>href</code> attribute set to "#", the <code>rel</code> attribute set to "citation", the <code>data-toggle</code> attribute set to "popover", and the <code>data-content</code> defined as the text of your citation.
+		<p>This code on the left creates the image and caption on the right:</p>
+		<div style="margin-top: 30px; background-color: #f9f2f4; padding-left: 2%; width: 50%; float: left">
+			<code>
+				<p style="margin-top: 0em!important; margin-bottom: 0px!important;">&lt;figure style="float: right; width: 40%; padding-right: 20px; padding-bottom: 5px;"&gt;</p>
+					<p style="padding-left:7%; padding-right: 1%; margin-top: 0em!important; margin-bottom: 0px!important;">&lt;img src="images/duck.jpg" width="100%" /&gt;</p>
+					<p style="padding-left:7%; padding-right: 1%; margin-top: 0em!important; margin-bottom: 0px!important;">&lt;figcaption&gt;&lt;a href="#" rel="citation" data-toggle="popover" data-content="Cro0016.2009. Mallard2.jpg, Wikimedia Commons, accessed 13 April 2016."&gt;Image 1&gt; - A duck&lt;/figcaption&gt;</p>
+				<p style="margin-top: 0em!important; margin-bottom: 0px!important;">&lt;/figure&gt;</p>
+			</code>
+		</div>
+		<figure style="float: right; width: 40%; padding-right: 20px; padding-bottom: 5px;">
+			<img src="images/duck.jpg" width="100%" />
+			<figcaption><a href="#" rel="citation" data-toggle="popover" data-content="Cro0016.2009. Mallard2.jpg, Wikimedia Commons, accessed 13 April 2016.">Image 1</a> - A duck</figcaption>
+		</figure>
+		<div style="clear: both"></div>	
+		<p>Note how the the caption contains a link, but clicking on that link doesn't lead to another website. Instead, it opens a small dialogue box with the defined ciataion content. Use this exact same code to create citation popovers for your page's parenthetical citations.</p>
+		<br>
+		<br>
 		<h3>Commit local changes</h3>
 		<hr>
 		<p>To commit local changes to your cloned repo, save the files in the text editor and then go to the GitHub application.</p> 		 
@@ -157,12 +179,16 @@
 		<div style="clear: both"></div>
 		<a href="images/change-branch-browser.png" data-lightbox="13"><img src="images/change-branch-browser.png" style="margin: 2em; float: right; width: 60%" /></a>
 		<br>
-		<p>After this, return to the repo in your internet browser (at <a href="http://github.com">github.com</a>). If you have left your branch settings alone this entire time, you should notice that the file you've been changing will have more recent change times, as highlighted here. If you don't notice this, first check to see if you are looking at the proper branch.</p>
-		<p>Change the branch to the gh-pages one by clicking on the dropdown list highlighted in this image.</p>
+		<p>After this, return to the repo in your internet browser (at <a href="http://github.com">github.com</a>). If you have left your branch settings alone this entire time, you should notice that the file you've been changing will have more recent change times, as highlighted here. If you don't notice this, first check to see if you are looking at the proper branch. Change the displayed branch by clicking on the dropdown list highlighted in this image.</p>
 		<div style="clear: both"></div>
+		<br>
+		<br>
+		<h3>Create and Complete a Pull Request</h3>
+		<hr>
+		<p>For this example we will make a pull request that brings the changes you've made on the master branch <em>from</em> that branch <em>to</em> the gh-pages branch. To begin, change the displayed branch to the gh-pages one. See the last image in the previous section if you are having trouble finding the location of the dropdown list for your repo's branches.</p>
 		<a href="images/pull-request-btn.png" data-lightbox="14"><img src="images/pull-request-btn.png" style="margin: 2em; float: right; width: 40%" /></a>
 		<br>
-		<p>After confirming that your changes have shown up (if they haven't, try re-syncing in the application and then refreshing the repo browser page), create a new Pull Request by clicking the Pull Request button.</p>
+		<p>Create a new Pull Request by clicking the Pull Request button.</p>
 		<div style="clear: both"></div>
 		<a href="images/compare-repos.png" data-lightbox="15"><img src="images/compare-repos.png" style="margin: 2em; float: right; width: 60%" /></a>
 		<br>
@@ -174,7 +200,7 @@
 		<div style="clear: both"></div>
 		<a href="images/compare-branches.png" data-lightbox="17"><img src="images/compare-branches.png" style="margin: 2em; float: right; width: 60%" /></a>
 		<br>
-		<p>After choosing your own account on this list, the "base fork" and "head fork" options will disappear and all that will remain are "base" and "compare," where they are set to the same branch: gh-pages</p>
+		<p>After choosing your own account on this list, the "base fork" and "head fork" options will disappear and all that will remain are "base" and "compare," where they are set to the same branch: gh-pages.</p>
 		<p>Remember: "base" is the branch where your changes are going <em>into</em> and "compare" is where the changes are <em>coming from</em>. So, for this specific tutorial, you should leave the "base" as "gh-pages" and change the "compare" to "master."</p>
 		<div style="clear: both"></div>
 		<a href="images/create-pull-request.png" data-lightbox="18"><img src="images/create-pull-request.png" style="margin: 2em; float: right; width: 60%" /></a>
@@ -212,7 +238,7 @@
 		<br>
 		<h3>Concluding Thoughts</h3>
 		<hr>
-		<p>Ok, I have tried to be as comprehensive as possible. If any of you have issues, please feel free to contact our main LEADR email address, <strong>leadr [at] msu [dot] edu</strong>, or myself at <strong>geyerbri [at] msu [dot] edu</strong>, to ask for assistance or set up an appointment to meet with someone. You may also stop by the lab any time that we are open. You can find our hours on the <a href="http://leadr.msu.edu" target="_blank">main page of our website</a>.</p>
+		<p>Ok, I have tried to be as comprehensive as possible. If any of you have issues, please feel free to contact our main LEADR email address, <strong><u>leadr [at] msu [dot] edu</u></strong>, or myself at <strong><u>geyerbri [at] msu [dot] edu</u></strong>, to ask for assistance or set up an appointment to meet with someone. You may also stop by the lab any time that we are open. You can find our hours on the <a href="http://leadr.msu.edu" target="_blank">main page of our website</a>.</p>
 		 
 		 
 		 
