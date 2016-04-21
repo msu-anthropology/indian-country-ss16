@@ -135,6 +135,28 @@
 		<p>If you want to view changes as you make them to .html files, simply double-click to open and it should open in your internet browser. As you make changes in the text editor to the file, you can refresh the window or tab of the file in the browser to see the changes immediately.</p>
 		<br>
 		<br>
+				<h3>Images with Captions</h3>
+		<hr>
+		<p>Because LEADR projects often require captions on images in order to allow for proper citation, adding images to html files requires a little more than simple &lt;img&gt; tags. Furthermore, the <code>src</code> value for an image used on a LEADR project should point to a locally-saved image, rather than a URL of the image on a website. This means you should be saving images from the internet into your repo, often into the "images" folder that is a sub-folder to the one that contains your html file. For example, if your html file is saved in a folder named "sites," it is easiest to save the image you use into the folder named "images" <em>inside</em> of the one named "sites."</p>
+		<p>To add captions to images, it is important to use the &lt;figure&gt; container. Figure containers allow a &lt;figcaption&gt; container within, which makes captioning painless. Furthermore, any changes to the image's size, alignment, or other attributes should be made to the &lt;figure&gt; tag instead. Define the &lt;img&gt; tag with <code>width="100%"</code> in order to ensure the image's width expands and contracts as you change the size of the &lt;figure&gt; container.</p>
+		<p>Finally, to create a popover that displays the citation information about your image, use an &lt;a&gt; tag with the <code>href</code> attribute set to "#", the <code>rel</code> attribute set to "citation", the <code>data-toggle</code> attribute set to "popover", and the <code>data-content</code> defined as the text of your citation.
+		<p>This code on the left creates the image and caption on the right:</p>
+		<div style="margin-top: 30px; background-color: #f9f2f4; padding-left: 2%; width: 50%; float: left">
+			<code>
+				<p style="margin-top: 0em!important; margin-bottom: 0px!important;">&lt;figure style="float: right; width: 40%; padding-right: 20px; padding-bottom: 5px;"&gt;</p>
+					<p style="padding-left:7%; padding-right: 1%; margin-top: 0em!important; margin-bottom: 0px!important;">&lt;img src="images/duck.jpg" width="100%" /&gt;</p>
+					<p style="padding-left:7%; padding-right: 1%; margin-top: 0em!important; margin-bottom: 0px!important;">&lt;figcaption&gt;&lt;a href="#" rel="citation" data-toggle="popover" data-content="Cro0016.2009. Mallard2.jpg, Wikimedia Commons, accessed 13 April 2016."&gt;Image 1&lt;/a&gt; - A duck&lt;/figcaption&gt;</p>
+				<p style="margin-top: 0em!important; margin-bottom: 0px!important;">&lt;/figure&gt;</p>
+			</code>
+		</div>
+		<figure style="float: right; width: 40%; padding-right: 20px; padding-bottom: 5px;">
+			<img src="images/duck.jpg" width="100%" />
+			<figcaption><a href="#" rel="citation" data-toggle="popover" data-content="Cro0016.2009. Mallard2.jpg, Wikimedia Commons, accessed 13 April 2016.">Image 1</a> - A duck</figcaption>
+		</figure>
+		<div style="clear: both"></div>	
+		<p>Note how the the caption contains a link, but clicking on that link doesn't lead to another website. Instead, it opens a small dialogue box with the defined ciataion content. Use this exact same code to create citation popovers for your page's parenthetical citations.</p>
+		<br>
+		<br>
 		<h3>Commit local changes</h3>
 		<hr>
 		<p>To commit local changes to your cloned repo, save the files in the text editor and then go to the GitHub application.</p> 		 
