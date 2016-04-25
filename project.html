@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,9 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/leaflet.css" />
+	
+	<!--Lightbox2 for Tutorial images-->
+	<link rel="stylesheet" href="src/css/lightbox.css" />
     
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -31,6 +35,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<style>
+	p {
+	margin-top: 2em;
+	}
+	</style>
   </head>
 
   <body>
@@ -60,36 +69,176 @@
               </ul>
             </li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div><!-- /.nav-collapse -->
       </div>
     </div>
 
     <!-- Begin page content -->
       
      <div id="detail">
-      <h1>SITE NAME</h1>
-      <h3>TIME PERIOD</h3>
-	  <h4>AUTHOR</h4>
-         <h3>FIRST SECTION HEADING</h3>
-		 <hr><!--this draws a line across the page, which I put under each section heading in the example-->
-		 <p>Paragraph text goes between these</p>
-		 <a href="#" rel="citation" data-toggle="popover" data-content=""><!--this is the required <a href> beginning tag for inline reference popups-->
-		 <br><!--this creates a break, to separate things a little better-->
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
+		<h1>Guide to Using GitHub</h1>
+		<h3>Forking a Repository</h3>
+	  	<hr><!--this draws a line across the page, which I put under each section heading in the example-->
+		<p>To fork a repository (repo), make sure you are logged into GitHub and then navigate your browser to the repo's main page on GitHub's website. I will be using the Spring 2016 iteration of <a href="https://github.com/msu-anthropology/indian-country-ss16" target="_blank"><em>This is Indian Country</em></a> to demonstrate this.</p>
+		<a href="images/fork.png" data-lightbox="1"><img src="images/fork.png" style="margin: 2em; float: right; width: 40%"/></a>
+		<br>
+		<p>Click on the "Fork" button near the top-right of the page.</p>
+		<div style="clear: both"></div>
+		<p>This should redirect you to a new page, which will be for your forked repo, even though it looks the same as the page from the original repo.</p>
+		<div style="clear: both"></div>
+		<a href="images/repo-name.png" data-lightbox="2"><img src="images/repo-name.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>Note how the name of this repo is your username, followed by the repo name, with the original repo's username and repo name combination underneath it.</p>
+		<div style="clear: both"></div>
+		<br>
+		<br>
+		<h3>Cloning a Repository</h3>
+		<hr>
+		<p>Cloning is the process of saving a local copy of your repo to your own computer, so that you can make changes outside of the internet. A clone is simply a local version of a repo, which means it must be synced periodically with your version on the web. To do this, you must first download and install the <a href="http://desktop.github.com" target="_blank">GitHub Desktop program</a> and make sure you have set up the program by logging into your account. This tutorial uses screenshots from the PC version of this application, but the majority of the steps should be the same for a Mac. The few steps that are drastically different will include screenshots for Mac.</p>
+		<a href="images/settings-btn.png" data-lightbox="3"><img src="images/settings-btn.png" style="margin: 2em; float: right; width: 30%" /></a>
+		<br>
+		<p><strong>FOR PC</strong>: To confirm you have logged into your account, locate the settings area of the application. It is the button that looks like a gear.</p>
+		<p>This will bring up a list of places to go to change various settings. Pick the one that says "Options..."</p>
+		<div style="clear: both"></div>
+		<a href="images/options.png" data-lightbox="5"><img src="images/options.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>Here you find whether or not you are logged into your account. If you see your account, then great, if not, you'll see this view, with the option to "Add Account."</p>
+		<div style="clear: both"></div>
+		<p>Login to your account to complete the process.</p>
+		<a href="images/mac-preferences.png" data-lightbox="6"><img src="images/mac-preferences.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p><strong>FOR MAC</strong>:To confirm you have logged into your account, click on "GitHub Desktop" in the Menu Bar at the top of the screen and choose "Preferences..." to open the Preferences window.</p>
+		<div style="clear: both"></div>
+		<a href="images/mac-login.png" data-lightbox="7"><img src="images/mac-login.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>Click on the "Accounts" tab, and confirm that you are signed into your account. If you are not, add your credentials and click "Sign In."</p>
+		<div style="clear: both"></div>
+		<a href="images/clone-btn.png" data-lightbox="8"><img src="images/clone-btn.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>To clone, go back to the repo on GitHub in your internet browser and click on the button that looks like a computer monitor with an arrow pointing down into it. This image depicts the top-right of the repo page.</p>
+		<div style="clear: both"></div>
+		<a href="images/approve-app.png" data-lightbox="9"><img src="images/approve-app.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>This may open up a window that asks for permission to launch a program. Grant this permission.</p>
+		<div style="clear: both"></div>
+		<a href="images/clone-location.png" data-lightbox="10"><img src="images/clone-location.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>This will launch your GitHub desktop application and will ask you where you will like to save the repo. As I said in class, it is best to keep all your cloned repos in a single folder titled GitHub. You can see here that my GitHub folder is inside my Documents folder.</p>
+		<div style="clear: both"></div>
+		<p>After accepting the location, your clone is now on your computer. You will notice that the application shows the active branch at the top of the window. Please simply leave this setting alone and do not change between branches. This will make things easier for you for the duration of this project. If you do wish to understand how branch changes on a cloned repo work, please come and see me in LEADR.</p>
+		<br>
+		<br>
+		<h3>Making Changes Locally</h3>
+		<hr>
+		<p>To make changes to your cloned repo before sending them to the original online, install a text editing program. As mentioned in class, I recommend either <a href="https://notepad-plus-plus.org/download/" target="_blank">Notepad++</a> for PC or <a href="https://itunes.apple.com/us/app/textwrangler/id404010395?mt=12" target="_blank">TextWrangler</a> for Mac.</p>
+		<p>To open any single file (including the .html files we're editing for this project), simply right-click for PC, or control-click for Mac, on the file and choose the text editor from the list (at least, Notepad++ adds itself to this list), or choose "Open With" and then pick the text editor.</p>
+		<p>If you want to view changes as you make them to .html files, simply double-click to open and it should open in your internet browser. As you make changes in the text editor to the file, you can refresh the window or tab of the file in the browser to see the changes immediately.</p>
+		<br>
+		<br>
+				<h3>Images with Captions</h3>
+		<hr>
+		<p>Because LEADR projects often require captions on images in order to allow for proper citation, adding images to html files requires a little more than simple &lt;img&gt; tags. Furthermore, the <code>src</code> value for an image used on a LEADR project should point to a locally-saved image, rather than a URL of the image on a website. This means you should be saving images from the internet into your repo, often into the "images" folder that is a sub-folder to the one that contains your html file. For example, if your html file is saved in a folder named "sites," it is easiest to save the image you use into the folder named "images" <em>inside</em> of the one named "sites."</p>
+		<p>To add captions to images, it is important to use the &lt;figure&gt; container. Figure containers allow a &lt;figcaption&gt; container within, which makes captioning painless. Furthermore, any changes to the image's size, alignment, or other attributes should be made to the &lt;figure&gt; tag instead. Define the &lt;img&gt; tag with <code>width="100%"</code> in order to ensure the image's width expands and contracts as you change the size of the &lt;figure&gt; container.</p>
+		<p>Finally, to create a popover that displays the citation information about your image, use an &lt;a&gt; tag with the <code>href</code> attribute set to "#", the <code>rel</code> attribute set to "citation", the <code>data-toggle</code> attribute set to "popover", and the <code>data-content</code> defined as the text of your citation.
+		<p>This code on the left creates the image and caption on the right:</p>
+		<div style="margin-top: 30px; background-color: #f9f2f4; padding-left: 2%; width: 50%; float: left">
+			<code>
+				<p style="margin-top: 0em!important; margin-bottom: 0px!important;">&lt;figure style="float: right; width: 40%; padding-right: 20px; padding-bottom: 5px;"&gt;</p>
+					<p style="padding-left:7%; padding-right: 1%; margin-top: 0em!important; margin-bottom: 0px!important;">&lt;img src="images/duck.jpg" width="100%" /&gt;</p>
+					<p style="padding-left:7%; padding-right: 1%; margin-top: 0em!important; margin-bottom: 0px!important;">&lt;figcaption&gt;&lt;a href="#" rel="citation" data-toggle="popover" data-content="Cro0016.2009. Mallard2.jpg, Wikimedia Commons, accessed 13 April 2016."&gt;Image 1&lt;/a&gt; - A duck&lt;/figcaption&gt;</p>
+				<p style="margin-top: 0em!important; margin-bottom: 0px!important;">&lt;/figure&gt;</p>
+			</code>
+		</div>
+		<figure style="float: right; width: 40%; padding-right: 20px; padding-bottom: 5px;">
+			<img src="images/duck.jpg" width="100%" />
+			<figcaption><a href="#" rel="citation" data-toggle="popover" data-content="Cro0016.2009. Mallard2.jpg, Wikimedia Commons, accessed 13 April 2016.">Image 1</a> - A duck</figcaption>
+		</figure>
+		<div style="clear: both"></div>	
+		<p>Note how the the caption contains a link, but clicking on that link doesn't lead to another website. Instead, it opens a small dialogue box with the defined ciataion content. Use this exact same code to create citation popovers for your page's parenthetical citations.</p>
+		<br>
+		<br>
+		<h3>Commit local changes</h3>
+		<hr>
+		<p>To commit local changes to your cloned repo, save the files in the text editor and then go to the GitHub application.</p> 		 
+		<a href="images/changes-tab.png" data-lightbox="11"><img src="images/changes-tab.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>Make sure you have selected the correct repo on the left side of the window (you can see that I have several repos).</p>		
+		<p>Then, select the "Changes" tab at the top.</p>
+		<p>Give the commit a summary name, and then click the "Commit to..." button at the bottom.</p>
+		<div style="clear: both"></div>
+		<p>The changes have now been saved into your cloned repo locally, but they are not yet on your original repo online. If you have made a mistake and committed something you did not intend to commit, you can keep the changes from going to the original repo by not doing any of these further steps. If this happens, it would be best to contact me (Brian Geyer) so I can show you how to properly save the work you want to save and delete the work you didn't mean to do.</p>
+		<br>
+		<br>
+		<h3>Sync Clone to Original Repo</h3>
+		<hr>
+		<p>When you are ready, you can send all of your local changes to the original repo on GitHub by doing what is called a sync.</p>
+		<a href="images/sync-btn.png" data-lightbox="12"><img src="images/sync-btn.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>To sync your cloned repo to your original one, make sure you don't have any changes waiting to be committed. As you can see in this example, there are none listed.</p>
+		<p>Click the "Sync" button in the top-right and wait for the progress bar to completely fill from left to right.</p>
+		<div style="clear: both"></div>
+		<a href="images/change-branch-browser.png" data-lightbox="13"><img src="images/change-branch-browser.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>After this, return to the repo in your internet browser (at <a href="http://github.com">github.com</a>). If you have left your branch settings alone this entire time, you should notice that the file you've been changing will have more recent change times, as highlighted here. If you don't notice this, first check to see if you are looking at the proper branch. Change the displayed branch by clicking on the dropdown list highlighted in this image.</p>
+		<div style="clear: both"></div>
+		<br>
+		<br>
+		<h3>Create and Complete a Pull Request</h3>
+		<hr>
+		<p>For this example we will make a pull request that brings the changes you've made on the master branch <em>from</em> that branch <em>to</em> the gh-pages branch. To begin, change the displayed branch to the gh-pages one. See the last image in the previous section if you are having trouble finding the location of the dropdown list for your repo's branches.</p>
+		<a href="images/pull-request-btn.png" data-lightbox="14"><img src="images/pull-request-btn.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>Create a new Pull Request by clicking the Pull Request button.</p>
+		<div style="clear: both"></div>
+		<a href="images/compare-repos.png" data-lightbox="15"><img src="images/compare-repos.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>The window that opens will look something like this one, with four dropdown menus: "base fork," "base," "head fork," and "compare." In this configuration, the system thinks you're asking to merge changes from one fork (yours) into another (in this case, the original). For this specific Pull Request, we are looking to make changes within our own forked repo, so it is important to change whichever fork (either the "base fork" or "head fork") from the original repo on the msu-anthropology account to one's own account.</p>
+		<div style="clear: both"></div>
+		<a href="images/change-base-fork.png" data-lightbox="16"><img src="images/change-base-fork.png" style="margin: 2em; float: right; width: 35%" /></a>
+		<br>
+		<p>Your own account should be the second entry on the list, under msu-anthropology.</p>
+		<div style="clear: both"></div>
+		<a href="images/compare-branches.png" data-lightbox="17"><img src="images/compare-branches.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>After choosing your own account on this list, the "base fork" and "head fork" options will disappear and all that will remain are "base" and "compare," where they are set to the same branch: gh-pages.</p>
+		<p>Remember: "base" is the branch where your changes are going <em>into</em> and "compare" is where the changes are <em>coming from</em>. So, for this specific tutorial, you should leave the "base" as "gh-pages" and change the "compare" to "master."</p>
+		<div style="clear: both"></div>
+		<a href="images/create-pull-request.png" data-lightbox="18"><img src="images/create-pull-request.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>After making this selection, the browser window should hopefully update again, to give you the ability to name the Pull Request (although, it will probably have a name based on the commit you did before), write extra details, and then create it.</p>
+		<div style="clear: both"></div>
+		<a href="images/complete-pull-request.png" data-lightbox="19"><img src="images/complete-pull-request.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>If you have properly made sure you've only made changes to the one branch, the next window will indicate that your Pull Request can be merged automatically. Click "Merge pull request," and then "Confirm merge." After this, your Pull Request is complete and the changes you made should be on the other branch as well.</p>
+		<div style="clear: both"></div> 
+		<a href="images/conflicts.png" data-lightbox="20"><img src="images/conflicts.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>However, if you have made changes to both branches, you may see a screen after creating the Pull Request that looks like this, where it says the changes cannot be merged automatically. In this case, please contact me or someone else in LEADR and we will help you resolve the issue.</p>
+		<div style="clear: both"></div>
+		<p>That's it! If things have gone smoothly, you will have successfully made changes to a file on your own computer, and then sent those changes all the way from that location on your computer to your forked repo on GitHub and into another branch.</p>
+		<br>
+		<br>
+		<h3>Turning In Your Work: Create Pull Request from Your Repo to the Main Repo</h3>
+		<hr>
+		<p>When you have completed your project, you will need to turn in your work. To do this, you'll need to create a Pull Request that sends your project from your own master branch to the main repo's master branch.</p>		 
+		<a href="images/compare-repos-master.png" data-lightbox="21"><img src="images/compare-repos-master.png" style="margin: 2em; float: right; width: 60%" /></a>
+		<br>
+		<p>To do this, you will follow most of the same steps above, but will be looking at your master branch when you click the Pull Request button. You will again reach the point shown in this image.</p>
+		<p>However, instead of changing the "base fork" from msu-anthropology to your own account, leave it alone. This means all the settings will be as shown: the "base fork" (where the changes are going <em>into</em>) is "msu-anthropology," the "base" is "master," the "head fork" is your account, and the "compare" should be "master" (or whichever of your branches contains your final version).</p>
+		<div style="clear: both"></div>
+		<a href="images/turned-in.png" data-lightbox="22"><img src="images/turned-in.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p>Click "Create pull request" and you should see a screen similar to this, where there is now "Merge pull request" button. If you have successfully reached this screen, then you have nothing more to do.</p>
+		<div style="clear: both"></div>
+		<a href="images/comment.png" data-lightbox="23"><img src="images/comment.png" style="margin: 2em; float: right; width: 40%" /></a>
+		<br>
+		<p><strong>HOWEVER</strong>, if you receive an email about a comment on your pull request, it means I have written something to you as a comment on your pull request. Please revisit your "turn-in" Pull Request and address the issues I have written there. This is an example of what a comment will look like.
+		<div style="clear: both"></div>
+		<br>
+		<br>
+		<h3>Concluding Thoughts</h3>
+		<hr>
+		<p>Ok, I have tried to be as comprehensive as possible. If any of you have issues, please feel free to contact our main LEADR email address, <strong><u>leadr [at] msu [dot] edu</u></strong>, or myself at <strong><u>geyerbri [at] msu [dot] edu</u></strong>, to ask for assistance or set up an appointment to meet with someone. You may also stop by the lab any time that we are open. You can find our hours on the <a href="http://leadr.msu.edu" target="_blank">main page of our website</a>.</p>
 		 
 		 
 		 
@@ -118,6 +267,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="leaflet-omnivore-master/leaflet-omnivore.js"></script>
     <script src="js/leaflet.js"></script> 
+	<script src="src/js/lightbox.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("a[rel=citation]").popover({
@@ -131,4 +281,6 @@
 			});
 		});
 	</script>
-	</body></html>
+	
+  </body>
+</html>
